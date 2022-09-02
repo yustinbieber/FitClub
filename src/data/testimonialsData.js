@@ -12,14 +12,14 @@ export const testimonialsData = [
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
-    name: 'JOHN KEVIN',
+    review: 'BLOOD, SWEAT & RESPECT, The first two you give, the last one you earn',
+    name: 'DWAYNE JOHNSON',
     status: 'COACH'
   },
   {
     image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
-    name: 'FRANKLIN',
+    review:'Dwayne sir has really helped me and motivated me to go above and beyond and push through our limits',
+    name: 'SHUBHODEEP BANERJEE',
     status: "CUSTOMER"
   }
 ];
