@@ -6,20 +6,20 @@ export const testimonialsData = [
   {
     image: image1,
     review:
-      "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
-    name: 'MATHEW HENDRICKSON',
-    status : 'ENTREPRENEUR'
+      "¡Tomé la decisión correcta al elegir MTOR y al elegir el plan y programa correcto ya logré mi cuerpo ideal!",
+    name: 'CARLITOS',
+    status : 'CLIENTE'
   },
   {
     image: image2,
-    review: 'BLOOD, SWEAT & RESPECT, The first two you give, the last one you earn',
-    name: 'DWAYNE JOHNSON',
-    status: 'COACH'
+    review: 'SANGRE, SUDOR Y RESPETO, Los dos primeros los das, el último los ganas',
+    name: 'LUCIO',
+    status: 'ENTRANADOR'
   },
   {
     image : image3,
-    review:'Dwayne sir has really helped me and motivated me to go above and beyond and push through our limits',
+    review:'Dwayne señor realmente me ha ayudado y motivado a ir más allá y superar nuestros límites.',
     name: 'SHUBHODEEP BANERJEE',
-    status: "CUSTOMER"
+    status: "CLIENTE"
   }
 ];

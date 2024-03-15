@@ -7,9 +7,17 @@ import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import {motion} from 'framer-motion';
 import NumberCounter from 'number-counter'
+
+
 const Hero = () => {
     const transition =  {type: 'spring', duration: 3}
     const mobile = window.innerWidth<= 768 ? true:false;
+
+    const handleButtonClick = () => {
+        // Redirigir a la página deseada
+        window.location.href = "https://mtor-tienda.vercel.app/";
+    };
+
     return (
         <div className="hero" id='home'>
             <div className="blur hero-blur">
@@ -17,62 +25,55 @@ const Hero = () => {
             </div>
             <div className="left-h">
                 <Header />
-                {/* {The Best Add} */}
+                {/* {El Mejor Anuncio} */}
                 <div className="the-best-ad">
                     <motion.div 
                     initial={{left: mobile? "165px" : "238px"}}
                     whileInView={{left: '8px'}}
                     transition={{...transition, type: 'tween'}}
                     ></motion.div>
-                    <span>The Best Fitness Club in the Town</span>
+                    <span>El Mejor Club de Fitness de la Ciudad</span>
                 </div>
-                {/* {Hero Heading} */}
+                {/* {Encabezado del Héroe} */}
                 <div className="hero-text">
                     <div>
-                        <span className='stroke-text'>Shape </span>
-                        <span>Your</span>
+                        <span className='stroke-text'>Dale Forma </span>
+                        <span>A tu</span>
                     </div>
                     <div>
-                        <span>Ideal Body</span>
+                        <span>Cuerpo Ideal</span>
                     </div>
                     <div>
                         <span>
-                            In here we will help you to shape and build your ideal body and live up your life to fullest
+                            Aquí te ayudaremos a dar forma y construir tu cuerpo ideal y vivir al máximo tu vida.
                         </span>
                     </div>
                 </div>
-                {/* {figures} */}
+                {/* {Figuras} */}
                 <div className="figures">
                     <div>
                         <span>
-                            <NumberCounter end={140} start={100} delay ='4' preFix="+"/>
+                            <NumberCounter end={140} start={75} delay ='4' preFix="+"/>
                         </span>
-                        <span>Expert Coaches</span>
+                        <span>Clientes satisfechos</span>
                     </div>
                     <div>
                         <span>
-                            <NumberCounter end={976} start={750} delay='4' preFix="+" />
+                            <NumberCounter end={50} start={15} delay='3' preFix="+" />
                         </span>
-                        <span>members joined</span>
-                    </div>
-                    <div>
-                        <span>
-                            <NumberCounter end={50} start={35} delay='3' preFix="+" />
-                        </span>
-                        <span>fitness programs</span>
+                        <span>Planes</span>
                     </div>
                     
                 </div>
-             {/* {Hero buttons} */}
+             {/* {Botones del Héroe} */}
              <div className="hero-buttons">
-                <buttons className="btn">Get started</buttons>
-                <buttons className="btn">Learn More</buttons>
+                <buttons className="btn" onClick={handleButtonClick}>Empezar</buttons>
+                <buttons className="btn" onClick={handleButtonClick}>Saber Más</buttons>
              </div>
             </div>
 
             <div className="right-h">
-                <button className="btn">Join Now</button>
-
+            <button id='comprar' className="btn" onClick={handleButtonClick}>Únete Ahora</button>
 
 
                 <motion.div
@@ -80,10 +81,10 @@ const Hero = () => {
                 whileInView={{right: "5rem"}}
                 transition={transition} className="heart-rate">
                     <img src={Heart} alt='' />
-                    <span>Heart Rate</span>
+                    <span>Ritmo Cardíaco</span>
                     <span>116 bpm</span>
                 </motion.div>
-                {/* {Hero images} */}
+                {/* {Imágenes del Héroe} */}
                 <img src={hero_image} alt='' className="hero-image"/>
                 <motion.img
                     initial={{ right: "26rem" }}
@@ -91,7 +92,7 @@ const Hero = () => {
                     transition={transition}
                 
                 src={hero_image_back} alt='' className="hero-image-back"/>
-                {/* {Calories} */}
+                {/* {Calorías} */}
                 <motion.div 
                     initial={{ right: "55rem" }}
                     whileInView={{ right: "45rem" }}
@@ -99,7 +100,7 @@ const Hero = () => {
                 className="calories">
                     <img src={Calories} alt='' />
                     <div>
-                        <span>Calories Burned</span>
+                        <span>Calorías Quemadas</span>
                         <span>220 kcal</span>
                     </div>
                 </motion.div>

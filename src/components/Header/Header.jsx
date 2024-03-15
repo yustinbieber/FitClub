@@ -16,7 +16,7 @@ const Header = () => {
         <div style={{
           backgroundColor: 'var(--appColor)',
            padding: '0.5rem', 
-           borderRadius: '5px', 
+           borderRadius: 'px', 
           
           }}
 
@@ -35,7 +35,7 @@ const Header = () => {
                 span={true}
                 smooth={true}
               > 
-                Home
+                Inicio
               </Link>
             </li>
             <li>
@@ -45,7 +45,7 @@ const Header = () => {
                 span={true}
                 smooth={true}
               >
-                Programms 
+                Programas 
               </Link>
             </li>
             <li>
@@ -55,7 +55,7 @@ const Header = () => {
                 span={true}
                 smooth={true}
               >
-                Why Us 
+                Por Que Elegirnos
               </Link>
             </li>
             <li>
@@ -65,7 +65,7 @@ const Header = () => {
                 span={true}
                 smooth={true}
               > 
-               Plans 
+               Planes 
               </Link>
             </li>
             <li>
@@ -75,7 +75,7 @@ const Header = () => {
                 span={true}
                 smooth={true}
               >
-                Testimonials
+                Testimonios
               </Link>
               </li>
             </ul>
